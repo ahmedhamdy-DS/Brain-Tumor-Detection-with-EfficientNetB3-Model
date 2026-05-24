@@ -48,9 +48,6 @@ $$\text{Accuracy} = \frac{\text{Number of correctly predicted images}}{\text{Tot
 
 The image data used for this problem is the [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection) from Kaggle. 
 
-<p align="center">
-  <img src="https://via.placeholder.com/600x250.png?text=Placeholder:+Raw+MRI+Scans+(YES/NO)" alt="Raw Data Samples" />
-</p>
 
 ## ⚙️ 4. Pipeline & Preprocessing
 
@@ -60,9 +57,6 @@ Medical images require careful preprocessing to ensure the model learns physiolo
 2. **CLAHE (Contrast Limited Adaptive Histogram Equalization):** Applied to enhance the contrast of the MRI scans, highlighting fine tissue details.
 3. **Data Augmentation:** Applied dynamic rotations, zooms, and flips to prevent overfitting and improve generalization.
 
-<p align="center">
-  <img src="https://via.placeholder.com/600x300.png?text=Placeholder:+Before+and+After+Preprocessing" alt="Preprocessing Steps" />
-</p>
 
 ## 🏗️ 5. Model Architecture
 
@@ -82,11 +76,6 @@ The model achieved strong results, proving its potential as a medical triage too
 *(Note: The validation set was used during training to tune hyperparameters, while the test set was kept completely unseen for final evaluation).*
 
 ### Confusion Matrix & Training History
-<p align="center">
-  <img src="https://via.placeholder.com/400x300.png?text=Placeholder:+Accuracy/Loss+Graphs" alt="Training Graphs" width="45%"/> 
-  &nbsp;
-  <img src="https://via.placeholder.com/400x300.png?text=Placeholder:+Confusion+Matrix" alt="Confusion Matrix" width="45%"/>
-</p>
 
 **Current Limitation:** The dataset used is relatively small. The statistical variance in the test set is high, meaning a larger, clinical-grade dataset is required for real-world medical deployment.
 
