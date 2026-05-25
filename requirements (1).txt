@@ -1,0 +1,8 @@
+# NeuroScanAI — Brain MRI Classifier
+# Python >= 3.10 recommended
+
+streamlit>=1.35.0
+tensorflow>=2.15.0        # or tensorflow-cpu if no GPU
+opencv-python-headless>=4.9.0
+numpy>=1.26.0
+Pillow>=10.3.0
