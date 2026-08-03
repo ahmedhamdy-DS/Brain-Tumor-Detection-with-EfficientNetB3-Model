@@ -13,7 +13,7 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 1. [Project Overview & Objectives](#1-project-overview--objectives)
 2. [What is a Brain Tumor?](#2-what-is-a-brain-tumor)
 3. [The Dataset](#3-the-dataset)
@@ -24,7 +24,7 @@
 
 ---
 
-## 🎯 1. Project Overview & Objectives
+##  1. Project Overview & Objectives
 
 The main purpose of this project is to build a robust Convolutional Neural Network (CNN) model that classifies whether a subject has a tumor based on an MRI scan. 
 
@@ -36,7 +36,7 @@ I used `accuracy` as the primary metric to justify the model's performance, whic
 
 $$\text{Accuracy} = \frac{\text{Number of correctly predicted images}}{\text{Total number of tested images}} \times 100\%$$
 
-## 🧠 2. What is a Brain Tumor?
+##  2. What is a Brain Tumor?
 
 > A brain tumor occurs when abnormal cells form within the brain. There are two main types of tumors: cancerous (malignant) tumors and benign tumors. Cancerous tumors can be divided into primary tumors, which start within the brain, and secondary tumors, which have spread from elsewhere, known as brain metastasis tumors. 
 > 
@@ -44,7 +44,7 @@ $$\text{Accuracy} = \frac{\text{Number of correctly predicted images}}{\text{Tot
 > 
 > *Source: [Wikipedia](https://en.wikipedia.org/wiki/Brain_tumor)*
 
-## 📂 3. The Dataset
+##  3. The Dataset
 
 The image data used for this problem is the [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection) from Kaggle. 
 
@@ -58,13 +58,13 @@ Medical images require careful preprocessing to ensure the model learns physiolo
 3. **Data Augmentation:** Applied dynamic rotations, zooms, and flips to prevent overfitting and improve generalization.
 
 
-## 🏗️ 5. Model Architecture
+##  5. Model Architecture
 
 I initially experimented with the **VGG-16** model architecture to establish a baseline. To optimize parameter efficiency and push the accuracy higher, the final pipeline was transitioned to **EfficientNetB3** using Transfer Learning.
 
 * **Callbacks Used:** `EarlyStopping` (to prevent overfitting) and `ReduceLROnPlateau` (to dynamically adjust the learning rate).
 
-## 📊 6. Results & Evaluation
+##  6. Results & Evaluation
 
 The model achieved strong results, proving its potential as a medical triage tool.
 
@@ -79,7 +79,7 @@ The model achieved strong results, proving its potential as a medical triage too
 
 **Current Limitation:** The dataset used is relatively small. The statistical variance in the test set is high, meaning a larger, clinical-grade dataset is required for real-world medical deployment.
 
-## 💻 7. Installation & Requirements
+##  7. Installation & Requirements
 
 To replicate this project on your local machine, follow these steps:
 
