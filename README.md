@@ -49,7 +49,7 @@ $$\text{Accuracy} = \frac{\text{Number of correctly predicted images}}{\text{Tot
 The image data used for this problem is the [Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection) from Kaggle. 
 
 
-## ⚙️ 4. Pipeline & Preprocessing
+##  4. Pipeline & Preprocessing
 
 Medical images require careful preprocessing to ensure the model learns physiological features rather than background noise. 
 
