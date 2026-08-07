@@ -1,0 +1,23 @@
+# dataset - too large / should be downloaded from Kaggle instead of committed
+Data/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# jupyter
+.ipynb_checkpoints/
+
+# trained model weights (large binary - see README for download link/instructions)
+*.h5
+*.keras
+
+# os
+.DS_Store
